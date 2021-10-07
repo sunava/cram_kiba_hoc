@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Execution">
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Binding_direction"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Binding_increment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Binding_error"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Task"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Binding_increment">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#IncrRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Input_increment"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b996830260cb95e784a9d9fbb5e34c61</ros:hasMD5>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#IncrReqest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_wsg_50_msgs/Incr</ros:hasTypePath>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#IncrResponse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Binding_direction">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#IncrRequest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Input_direction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Input_direction">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_wsg_50_msgs.owl#IncrRequest_direction">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direction</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Output_error">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Task">
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Input_direction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Output_error"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Input_increment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#IncrResponse">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_wsg_50_msgs.owl#IncrResponse_error"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_wsg_50_msgs/IncrResponse</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bf8e3bc5443691736455ca47e3128027</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_wsg_50_msgs.owl#IncrRequest_increment">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increment</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_wsg_50_msgs.owl#IncrResponse_error">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">error</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#uint8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Binding_error">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#IncrResponse"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Output_error"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Incr_Input_increment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#IncrReqest">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_wsg_50_msgs/IncrRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_wsg_50_msgs.owl#IncrRequest_direction"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cca1e2c685538b4c18fbfec9ea6b6b36</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_wsg_50_msgs.owl#IncrRequest_increment"/>
+  </rdf:Description>
+</rdf:RDF>

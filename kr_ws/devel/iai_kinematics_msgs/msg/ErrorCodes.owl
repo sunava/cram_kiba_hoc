@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#ErrorCodes">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5acf26755415e1ec18a6d523028f204d</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#ErrorCodes_val"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/ErrorCodes</ros:hasTypePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#ErrorCodes_val">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">val</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+  </rdf:Description>
+</rdf:RDF>

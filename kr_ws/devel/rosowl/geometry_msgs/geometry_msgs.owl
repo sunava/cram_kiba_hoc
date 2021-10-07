@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/geometry_msgs.owl">
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Point32.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/PointStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Polygon.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/WrenchStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Quaternion.owl"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/PoseWithCovarianceStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/AccelWithCovarianceStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/TwistStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Accel.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/InertiaStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/TwistWithCovariance.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/PoseStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Wrench.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/PoseWithCovariance.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Pose2D.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Transform.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/TransformStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Twist.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Vector3.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Inertia.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/QuaternionStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/PolygonStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Pose.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/PoseArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/TwistWithCovarianceStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/AccelStamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Vector3Stamped.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/AccelWithCovariance.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/src/rosowl/owl/ROS.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/geometry_msgs/msg/Point.owl"/>
+  </rdf:Description>
+</rdf:RDF>

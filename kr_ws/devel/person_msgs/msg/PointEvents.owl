@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#PointEvents_leftHand">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leftHand</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#PointEvents_header">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Header"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#PointEvents_rightHand">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int8"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rightHand</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#PointEvents">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7cee902a1c7ee58854a293430e44aa05</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#PointEvents_start"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person_msgs/PointEvents</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#PointEvents_rightHand"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#PointEvents_leftHand"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#PointEvents_header"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#PointEvents_pointTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#PointEvents_start">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Vector3"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">start</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#PointEvents_pointTo">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Vector3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pointTo</ros:hasSlotName>
+  </rdf:Description>
+</rdf:RDF>

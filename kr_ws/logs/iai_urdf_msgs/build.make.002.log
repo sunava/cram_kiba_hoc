@@ -1,0 +1,7 @@
+[  0%] Built target _iai_urdf_msgs_generate_messages_check_deps_AlterUrdf
+[ 14%] Built target iai_urdf_msgs_generate_messages_nodejs
+[ 42%] Built target iai_urdf_msgs_generate_messages_py
+[ 71%] Built target iai_urdf_msgs_generate_messages_eus
+[ 85%] Built target iai_urdf_msgs_generate_messages_lisp
+[100%] Built target iai_urdf_msgs_generate_messages_cpp
+[100%] Built target iai_urdf_msgs_generate_messages

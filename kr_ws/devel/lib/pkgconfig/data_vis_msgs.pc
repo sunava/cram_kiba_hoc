@@ -1,0 +1,8 @@
+prefix=/home/neem/work/kr_ws/devel
+
+Name: data_vis_msgs
+Description: Description of data_vis_msgs
+Version: 0.0.6
+Cflags: -I/home/neem/work/kr_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs message_runtime

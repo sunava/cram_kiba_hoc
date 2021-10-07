@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/std_msgs.owl#Char">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1bf77f25acecdedba0e224b162199717</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Char_data"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">std_msgs/Char</ros:hasTypePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/std_msgs.owl#Char_data">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#char"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

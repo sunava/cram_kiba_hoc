@@ -1,0 +1,8 @@
+prefix=/home/neem/work/kr_ws/devel
+
+Name: rosowl
+Description: Description of rosowl
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: genowl

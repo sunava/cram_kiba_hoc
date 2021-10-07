@@ -1,0 +1,8 @@
+prefix=/home/neem/work/kr_ws/devel
+
+Name: genowl
+Description: Description of genowl
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: genmsg

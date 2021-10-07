@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#KinematicSolverInfo">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#KinematicSolverInfo_link_names"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/KinematicSolverInfo</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cc048557c0f9795c392dd80f8bb00489</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#KinematicSolverInfo_limits"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#KinematicSolverInfo_joint_names"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#KinematicSolverInfo_limits">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limits</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#KinematicSolverInfo_joint_names">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joint_names</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#KinematicSolverInfo_link_names">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">link_names</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+  </rdf:Description>
+</rdf:RDF>

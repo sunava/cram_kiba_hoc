@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#Task_type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#Task_info">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#Task_tip">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tip</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#Task_id">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#Task_parent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parent</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#Task">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#Task_parent"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#Task_info"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#Task_type"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#Task_color"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#Task_id"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data_vis_msgs/Task</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">165080ef33de5a23c032a947cb733600</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#Task_tip"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#Task_color">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">color</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+</rdf:RDF>

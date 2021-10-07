@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#Analog_pin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pin</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#uint8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#Analog">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur_msgs/Analog</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#Analog_pin"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#Analog_domain"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f41c08a810adf63713aec88712cd553d</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#Analog_state"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#Analog_state">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">state</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#Analog_domain">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#uint8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+</rdf:RDF>

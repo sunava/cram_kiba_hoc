@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/std_msgs.owl#MultiArrayLayout_dim">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dim</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#MultiArrayDimension"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/std_msgs.owl#MultiArrayLayout_data_offset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#uint32"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data_offset</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/std_msgs.owl#MultiArrayLayout">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#MultiArrayLayout_dim"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0fed2a11c13e11c5571b4e2a995a91a3</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">std_msgs/MultiArrayLayout</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#MultiArrayLayout_data_offset"/>
+  </rdf:Description>
+</rdf:RDF>

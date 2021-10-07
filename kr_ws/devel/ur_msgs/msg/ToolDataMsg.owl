@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_analog_input_range2"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_tool_mode"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_tool_temperature"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_analog_input_range3"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_analog_input3"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_tool_output_voltage"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_analog_input2"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_tool_current"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">404fc266f37d89f75b372d12fa94a122</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur_msgs/ToolDataMsg</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_tool_voltage_48v"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_tool_temperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tool_temperature</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_analog_input3">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float64"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analog_input3</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_tool_voltage_48v">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tool_voltage_48v</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_tool_output_voltage">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#uint8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tool_output_voltage</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_analog_input2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analog_input2</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float64"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_tool_mode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#uint8"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tool_mode</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_analog_input_range2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analog_input_range2</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_analog_input_range3">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int8"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analog_input_range3</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#ToolDataMsg_tool_current">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tool_current</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+  </rdf:Description>
+</rdf:RDF>

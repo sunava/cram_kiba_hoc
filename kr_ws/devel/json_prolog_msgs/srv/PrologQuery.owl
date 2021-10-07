@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Input_query">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/json_prolog_msgs.owl#PrologQueryRequest_id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Output_ok">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQueryReqest">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/json_prolog_msgs.owl#PrologQueryRequest_query"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/json_prolog_msgs.owl#PrologQueryRequest_mode"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ae1d940ff32be0f4c9af16fc85baab7a</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">json_prolog_msgs/PrologQueryRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/json_prolog_msgs.owl#PrologQueryRequest_id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Output_message">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">json_prolog_msgs/PrologQuery</ros:hasTypePath>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQueryReqest"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b98fb21a498cfd5b16c55f4b1f1cfa7d</ros:hasMD5>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQueryResponse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQueryResponse">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/json_prolog_msgs.owl#PrologQueryResponse_ok"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">json_prolog_msgs/PrologQueryResponse</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f6fcb3b1ed8c7743c7fb7d5bcca28513</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/json_prolog_msgs.owl#PrologQueryResponse_message"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/json_prolog_msgs.owl#PrologQueryResponse_message">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">message</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/json_prolog_msgs.owl#PrologQueryResponse_ok">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ok</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Execution">
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Binding_mode"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Binding_id"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Binding_message"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Binding_query"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Binding_ok"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Task"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Task">
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Input_id"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Input_query"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Input_mode"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Output_ok"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Output_message"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/json_prolog_msgs.owl#PrologQueryRequest_query">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">query</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Binding_mode">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQueryRequest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Input_mode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Binding_ok">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQueryResponse"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Output_ok"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Binding_query">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQueryRequest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Input_query"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/json_prolog_msgs.owl#PrologQueryRequest_mode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#byte"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mode</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Input_mode">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Binding_id">
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Input_id"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQueryRequest"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Binding_message">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Output_message"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQueryResponse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologQuery_Input_id">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

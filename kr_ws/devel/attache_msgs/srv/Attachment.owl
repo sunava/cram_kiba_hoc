@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Binding_model1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_model1"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/attache_msgs.owl#AttachmentRequest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/attache_msgs.owl#AttachmentResponse_success">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">success</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Execution">
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Binding_model2"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Task"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Binding_success"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Binding_model1"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Binding_link1"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Binding_link2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#AttachmentReqest">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/attache_msgs.owl#AttachmentRequest_link1"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/attache_msgs.owl#AttachmentRequest_model2"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attache_msgs/AttachmentRequest</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ba35c904b2a348ba808f20c86dcbabd7</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/attache_msgs.owl#AttachmentRequest_model1"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/attache_msgs.owl#AttachmentRequest_link2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_link1">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Binding_model2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_model2"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/attache_msgs.owl#AttachmentRequest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Binding_link1">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/attache_msgs.owl#AttachmentRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_link1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/attache_msgs.owl#AttachmentResponse"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attache_msgs/Attachment</ros:hasTypePath>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c66622a43bf3cac88540c60ce36d5b63</ros:hasMD5>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/attache_msgs.owl#AttachmentReqest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Task">
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_model2"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Output_success"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_link1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_model1"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_link2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/attache_msgs.owl#AttachmentRequest_link2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">link2</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Binding_success">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/attache_msgs.owl#AttachmentResponse"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Output_success"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#AttachmentResponse">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">358e233cde0c8a8bcfea4ce193f8fc15</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/attache_msgs.owl#AttachmentResponse_success"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attache_msgs/AttachmentResponse</ros:hasTypePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/attache_msgs.owl#AttachmentRequest_link1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">link1</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Binding_link2">
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_link2"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/attache_msgs.owl#AttachmentRequest"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_model1">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/attache_msgs.owl#AttachmentRequest_model1">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">model1</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_link2">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Input_model2">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#Attachment_Output_success">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/attache_msgs.owl#AttachmentRequest_model2">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">model2</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

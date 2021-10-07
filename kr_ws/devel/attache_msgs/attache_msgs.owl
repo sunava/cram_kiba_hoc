@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/attache_msgs.owl">
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/attache_msgs/srv/Attachment.owl"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/attache_msgs/srv/JointControl.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/attache_msgs/srv/JointInformation.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/src/rosowl/owl/ROS.owl"/>
+  </rdf:Description>
+</rdf:RDF>

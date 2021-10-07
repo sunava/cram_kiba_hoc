@@ -1,0 +1,2 @@
+set(iai_control_msgs_MESSAGE_FILES "msg/MultiJointVelocityCommand.msg;msg/MultiJointVelocityImpedanceCommand.msg;msg/MultiJointVelocityImpedanceState.msg;msg/CartGoal.msg;msg/CartState.msg;msg/JointLimits.msg;msg/PowerState.msg;msg/pose_w_joints.msg;msg/PTUAction.msg;msg/PTUActionGoal.msg;msg/PTUActionResult.msg;msg/PTUActionFeedback.msg;msg/PTUGoal.msg;msg/PTUResult.msg;msg/PTUFeedback.msg")
+set(iai_control_msgs_SERVICE_FILES "")

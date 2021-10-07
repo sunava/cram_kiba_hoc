@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_wsg_50_msgs.owl#ConfResponse_error">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">error</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#uint8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#ConfReqest">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c9ee899b5f0899afa6060c9ba611652c</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_wsg_50_msgs/ConfRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_wsg_50_msgs.owl#ConfRequest_val"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_wsg_50_msgs/Conf</ros:hasTypePath>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#ConfResponse"/>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#ConfReqest"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0c7a1839200830facdc1205cf36615d5</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#ConfResponse">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_wsg_50_msgs.owl#ConfResponse_error"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bf8e3bc5443691736455ca47e3128027</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_wsg_50_msgs/ConfResponse</ros:hasTypePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Binding_error">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#ConfResponse"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Output_error"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Output_error">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_wsg_50_msgs.owl#ConfRequest_val">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">val</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Input_val">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Execution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Binding_val"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Task"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Binding_error"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Binding_val">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#ConfRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Input_val"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Task">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Output_error"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Conf_Input_val"/>
+  </rdf:Description>
+</rdf:RDF>

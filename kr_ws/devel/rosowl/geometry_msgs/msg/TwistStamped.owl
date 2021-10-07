@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#TwistStamped_twist">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">twist</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Twist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#TwistStamped">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">98d34b0043a2093cf9d9345ab6eef12e</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#TwistStamped_twist"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometry_msgs/TwistStamped</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#TwistStamped_header"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#TwistStamped_header">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Header"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header</ros:hasSlotName>
+  </rdf:Description>
+</rdf:RDF>

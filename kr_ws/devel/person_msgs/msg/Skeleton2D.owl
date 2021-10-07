@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#Skeleton2D_header">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Header"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#Skeleton2D_joints2D">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joints2D</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#Skeleton2D_numberOfJoints">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">numberOfJoints</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#Skeleton2D">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29355678924726e97e4d383a555e84ec</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person_msgs/Skeleton2D</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#Skeleton2D_numberOfJoints"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#Skeleton2D_header"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#Skeleton2D_joints2D"/>
+  </rdf:Description>
+</rdf:RDF>

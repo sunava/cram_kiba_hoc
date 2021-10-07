@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_control_msgs.owl#PTUActionFeedback">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">82e97615735594b25e2cee3da22d3eb7</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_control_msgs.owl#PTUActionFeedback_feedback"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_control_msgs.owl#PTUActionFeedback_status"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_control_msgs/PTUActionFeedback</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_control_msgs.owl#PTUActionFeedback_header"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_control_msgs.owl#PTUActionFeedback_status">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/actionlib_msgs.owl#GoalStatus"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">status</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_control_msgs.owl#PTUActionFeedback_header">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Header"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_control_msgs.owl#PTUActionFeedback_feedback">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_control_msgs.owl#PTUFeedback"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feedback</ros:hasSlotName>
+  </rdf:Description>
+</rdf:RDF>

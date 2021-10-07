@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Binding_measurement_context_id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Input_measurement_context_id"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#ControlRequest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/grasp_stability_msgs.owl#ControlResponse_result">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">result</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/grasp_stability_msgs.owl#ControlRequest_command">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">command</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Input_measurement_context_id">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Output_result">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Task">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Output_result"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Input_measurement_context_id"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Input_command"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Binding_result">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#ControlResponse"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Output_result"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#ControlReqest">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3e8c36ca9a454fdd1d9690e53d57a07c</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grasp_stability_msgs/ControlRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/grasp_stability_msgs.owl#ControlRequest_command"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/grasp_stability_msgs.owl#ControlRequest_measurement_context_id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#ControlResponse">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0d9206728848e73f5b28b05b46562257</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grasp_stability_msgs/ControlResponse</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/grasp_stability_msgs.owl#ControlResponse_result"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Execution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Binding_command"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Task"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Binding_measurement_context_id"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Binding_result"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#Control">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grasp_stability_msgs/Control</ros:hasTypePath>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bf72fbddb94b79305e5d568733fc59be</ros:hasMD5>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#ControlReqest"/>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#ControlResponse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/grasp_stability_msgs.owl#ControlRequest_measurement_context_id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measurement_context_id</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Binding_command">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#ControlRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Input_command"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/grasp_stability_msgs.owl#Control_Input_command">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

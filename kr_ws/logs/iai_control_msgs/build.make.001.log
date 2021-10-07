@@ -1,0 +1,36 @@
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_CartState
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_CartGoal
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_PTUActionGoal
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_PTUAction
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_PTUActionFeedback
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_PTUResult
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_PowerState
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_PTUGoal
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_PTUActionResult
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_MultiJointVelocityCommand
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_JointLimits
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_PTUFeedback
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_pose_w_joints
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_MultiJointVelocityImpedanceCommand
+[  0%] Built target _iai_control_msgs_generate_messages_check_deps_MultiJointVelocityImpedanceState
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[ 27%] Built target iai_control_msgs_generate_messages_nodejs
+[ 38%] Built target iai_control_msgs_generate_messages_lisp
+[ 59%] Built target iai_control_msgs_generate_messages_py
+[ 80%] Built target iai_control_msgs_generate_messages_eus
+[100%] Built target iai_control_msgs_generate_messages_cpp
+[100%] Built target iai_control_msgs_generate_messages

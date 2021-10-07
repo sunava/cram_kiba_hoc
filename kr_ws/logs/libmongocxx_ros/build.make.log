@@ -1,0 +1,8 @@
+[ 11%] [34m[1mPerforming build step for 'mongocxx'[0m
+/bin/sh: 1: scons: not found
+make[2]: *** [mongocxx/src/mongocxx-stamp/mongocxx-build] Error 127
+make[1]: *** [CMakeFiles/mongocxx.dir/all] Error 2
+CMakeFiles/mongocxx.dir/build.make:111: recipe for target 'mongocxx/src/mongocxx-stamp/mongocxx-build' failed
+CMakeFiles/Makefile2:104: recipe for target 'CMakeFiles/mongocxx.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

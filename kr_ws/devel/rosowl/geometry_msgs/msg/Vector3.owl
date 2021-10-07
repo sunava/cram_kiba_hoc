@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#Vector3_x">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float64"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#Vector3_z">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float64"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#Vector3">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4a842b65f413084dc2b10fb484ea7f17</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometry_msgs/Vector3</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Vector3_x"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Vector3_y"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Vector3_z"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#Vector3_y">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float64"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+</rdf:RDF>

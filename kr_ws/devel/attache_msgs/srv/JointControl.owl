@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/attache_msgs.owl#JointControlRequest_joint">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joint</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/attache_msgs.owl#JointControlResponse_success">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">success</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControlResponse">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">358e233cde0c8a8bcfea4ce193f8fc15</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attache_msgs/JointControlResponse</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/attache_msgs.owl#JointControlResponse_success"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/attache_msgs.owl#JointControlRequest_model">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">model</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Binding_success">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControlResponse"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Output_success"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Binding_model">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControlRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Execution">
+    <dul:defines rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Task"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Binding_position"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Binding_model"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Binding_hold_position"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Binding_joint"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Binding_success"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_hold_position">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Binding_hold_position">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControlRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_hold_position"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Binding_position">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControlRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_position"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Binding_joint">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControlRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_joint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl">
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControlResponse"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a612aff16b21bbbc8123bb6dd90ae211</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attache_msgs/JointControl</ros:hasTypePath>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControlReqest"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Task">
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_model"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_hold_position"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_position"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Output_success"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_joint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControlReqest">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/attache_msgs.owl#JointControlRequest_position"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/attache_msgs.owl#JointControlRequest_model"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/attache_msgs.owl#JointControlRequest_joint"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/attache_msgs.owl#JointControlRequest_hold_position"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cd7462b5abb868a44300836dc27aeedf</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attache_msgs/JointControlRequest</ros:hasTypePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/attache_msgs.owl#JointControlRequest_position">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/attache_msgs.owl#JointControlRequest_hold_position">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hold_position</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_position">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_model">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Output_success">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/attache_msgs.owl#JointControl_Input_joint">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

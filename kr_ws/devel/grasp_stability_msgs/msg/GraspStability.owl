@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/grasp_stability_msgs.owl#GraspStability">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grasp_stability_msgs/GraspStability</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27f85b330ae8a5e5c97d0bc8c3a83f4a</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/grasp_stability_msgs.owl#GraspStability_estimation_confidence"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/grasp_stability_msgs.owl#GraspStability_grasp_quality"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/grasp_stability_msgs.owl#GraspStability_measurement_context_id"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/grasp_stability_msgs.owl#GraspStability_grasp_category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/grasp_stability_msgs.owl#GraspStability_grasp_category">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grasp_category</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/grasp_stability_msgs.owl#GraspStability_grasp_quality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grasp_quality</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/grasp_stability_msgs.owl#GraspStability_measurement_context_id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measurement_context_id</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/grasp_stability_msgs.owl#GraspStability_estimation_confidence">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estimation_confidence</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+</rdf:RDF>

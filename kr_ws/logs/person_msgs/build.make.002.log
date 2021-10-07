@@ -1,0 +1,16 @@
+[  0%] Built target _person_msgs_generate_messages_check_deps_SkeletonBBox
+[  0%] Built target _person_msgs_generate_messages_check_deps_Skeleton3D
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target _person_msgs_generate_messages_check_deps_Person
+[  0%] Built target _person_msgs_generate_messages_check_deps_PointEvents
+[  0%] Built target _person_msgs_generate_messages_check_deps_Skeleton2D
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[ 22%] Built target person_msgs_generate_messages_py
+[ 40%] Built target person_msgs_generate_messages_cpp
+[ 62%] Built target person_msgs_generate_messages_eus
+[ 81%] Built target person_msgs_generate_messages_lisp
+[100%] Built target person_msgs_generate_messages_nodejs
+[100%] Built target person_msgs_generate_messages

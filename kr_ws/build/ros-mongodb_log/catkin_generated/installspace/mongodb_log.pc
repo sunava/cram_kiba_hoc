@@ -1,0 +1,8 @@
+prefix=/home/neem/work/kr_ws/install
+
+Name: mongodb_log
+Description: Description of mongodb_log
+Version: 0.0.0
+Cflags: -I/opt/ros/melodic/include -I/usr/include
+Libs: -L${prefix}/lib 
+Requires: roslib

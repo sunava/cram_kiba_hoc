@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_has_acceleration_limits">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_acceleration_limits</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_joint_name">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joint_name</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_max_velocity"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_has_velocity_limits"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_joint_name"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/JointLimits</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8ca618c7329ea46142cbc864a2efe856</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_min_position"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_max_position"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_has_position_limits"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_max_acceleration"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_has_acceleration_limits"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_has_velocity_limits">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_velocity_limits</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_has_position_limits">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_position_limits</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_max_acceleration">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">max_acceleration</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float64"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_min_position">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float64"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">min_position</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_max_position">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">max_position</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float64"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#JointLimits_max_velocity">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float64"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">max_velocity</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

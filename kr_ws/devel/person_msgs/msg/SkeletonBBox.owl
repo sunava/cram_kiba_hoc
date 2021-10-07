@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox_centroid3D">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Point32"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centroid3D</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox_centroid2D"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person_msgs/SkeletonBBox</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7381be9dad84730eae9a875b5e16a8fa</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox_centroid3D"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox_header"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox_dimension2D"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox_dimension3D"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox_header">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Header"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox_centroid2D">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Point32"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centroid2D</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox_dimension2D">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dimension2D</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Point32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#SkeletonBBox_dimension3D">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dimension3D</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Point32"/>
+  </rdf:Description>
+</rdf:RDF>

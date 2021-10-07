@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_control_msgs.owl#pose_w_joints_joint_values">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joint_values</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_control_msgs.owl#pose_w_joints">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_control_msgs.owl#pose_w_joints_joint_values"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50b3293f6e585f2a02888f333d3c3e8a</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_control_msgs/pose_w_joints</ros:hasTypePath>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#Pose_orientation">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orientation</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Quaternion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#Pose_position">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Point"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#Pose">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e45d45a5a1ce597b249e23fb30fc871f</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Pose_position"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Pose_orientation"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometry_msgs/Pose</ros:hasTypePath>
+  </rdf:Description>
+</rdf:RDF>

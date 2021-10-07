@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/std_msgs.owl#Int8MultiArray_data">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/std_msgs.owl#Int8MultiArray">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d7c1af35a1b4781bbe79e03dd94b7c13</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">std_msgs/Int8MultiArray</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Int8MultiArray_data"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Int8MultiArray_layout"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/std_msgs.owl#Int8MultiArray_layout">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#MultiArrayLayout"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layout</ros:hasSlotName>
+  </rdf:Description>
+</rdf:RDF>

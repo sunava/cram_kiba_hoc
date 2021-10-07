@@ -1,0 +1,8 @@
+prefix=/home/neem/work/kr_ws/devel
+
+Name: rosprolog
+Description: Description of rosprolog
+Version: 1.0.0
+Cflags: -I/home/neem/work/kr_ws/devel/include -I/home/neem/work/kr_ws/src/rosprolog/include
+Libs: -L${prefix}/lib -lrosprolog_kb -lrosprolog_client
+Requires: json_prolog_msgs geometry_msgs roscpp roslib rospack

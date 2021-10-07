@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#SetPayloadRequest_payload">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">payload</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Execution">
+    <dul:defines rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Task"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Binding_payload"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayload"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Binding_success"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetPayloadResponse">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur_msgs/SetPayloadResponse</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#SetPayloadResponse_success"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">358e233cde0c8a8bcfea4ce193f8fc15</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Binding_payload">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayloadRequest"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Input_payload"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Binding_success">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayloadResponse"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Output_success"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Task">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Input_payload"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Output_success"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetPayload">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7f12eb632882cb73e5721178d0073e39</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur_msgs/SetPayload</ros:hasTypePath>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayloadReqest"/>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetPayloadResponse"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Input_payload">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetPayloadReqest">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d12269f931817591aa52047629ca66ca</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#SetPayloadRequest_payload"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur_msgs/SetPayloadRequest</ros:hasTypePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#SetPayloadResponse_success">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">success</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetPayload_Output_success">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

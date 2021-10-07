@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#PoseStamped">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d3812c3cbc69362b77dc0b19b345f8f5</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometry_msgs/PoseStamped</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#PoseStamped_header"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#PoseStamped_pose"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#PoseStamped_header">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Header"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#PoseStamped_pose">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pose</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Pose"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

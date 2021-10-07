@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning">
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/planning_msgs.owl#PlanningReqest"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">63b30a5b2209d6af2bdcdcf4940aca3f</ros:hasMD5>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/planning_msgs.owl#PlanningResponse"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planning_msgs/Planning</ros:hasTypePath>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Input_bindings">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/planning_msgs.owl#PlanningRequest_scoring_methods">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scoring_methods</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/planning_msgs.owl#PlanningRequest_bindings">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bindings</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/planning_msgs.owl#Binding"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Input_scoring_methods">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/planning_msgs.owl#PlanningRequest_pattern">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pattern</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/planning_msgs.owl#PlanningResponse_plans">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/planning_msgs.owl#Plan"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plans</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Task">
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Input_bindings"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Output_plans"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Input_scoring_methods"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Input_pattern"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Output_unused_bindings"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#PlanningReqest">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/planning_msgs.owl#PlanningRequest_bindings"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/planning_msgs.owl#PlanningRequest_scoring_methods"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/planning_msgs.owl#PlanningRequest_pattern"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">df3573d1c696fbd0479c044049b5e3a0</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planning_msgs/PlanningRequest</ros:hasTypePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Binding_plans">
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Output_plans"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/planning_msgs.owl#PlanningResponse"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Input_pattern">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Output_plans">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#PlanningResponse">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/planning_msgs.owl#PlanningResponse_plans"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/planning_msgs.owl#PlanningResponse_unused_bindings"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planning_msgs/PlanningResponse</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6dbce147047db5e837c94aabe63a5256</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Execution">
+    <dul:describes rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Binding_pattern"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Binding_bindings"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Task"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Binding_unused_bindings"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Binding_plans"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Binding_scoring_methods"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Binding_unused_bindings">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/planning_msgs.owl#PlanningResponse"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Output_unused_bindings"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/planning_msgs.owl#PlanningResponse_unused_bindings">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unused_bindings</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Binding_scoring_methods">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/planning_msgs.owl#PlanningRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Input_scoring_methods"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Binding_bindings">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/planning_msgs.owl#PlanningRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Input_bindings"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Binding_pattern">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/planning_msgs.owl#PlanningRequest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/planning_msgs.owl#Planning_Input_pattern"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/planning_msgs.owl#Planning_Output_unused_bindings">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

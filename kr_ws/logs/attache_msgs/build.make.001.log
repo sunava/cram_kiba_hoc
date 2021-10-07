@@ -1,0 +1,9 @@
+[  0%] Built target _attache_msgs_generate_messages_check_deps_JointInformation
+[  0%] Built target _attache_msgs_generate_messages_check_deps_Attachment
+[  0%] Built target _attache_msgs_generate_messages_check_deps_JointControl
+[ 17%] Built target attache_msgs_generate_messages_cpp
+[ 35%] Built target attache_msgs_generate_messages_nodejs
+[ 58%] Built target attache_msgs_generate_messages_py
+[ 82%] Built target attache_msgs_generate_messages_eus
+[100%] Built target attache_msgs_generate_messages_lisp
+[100%] Built target attache_msgs_generate_messages

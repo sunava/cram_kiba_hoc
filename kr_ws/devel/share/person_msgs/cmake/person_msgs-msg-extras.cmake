@@ -1,0 +1,2 @@
+set(person_msgs_MESSAGE_FILES "/home/neem/work/kr_ws/src/iai_common_msgs/person_msgs/msg/Skeleton2D.msg;/home/neem/work/kr_ws/src/iai_common_msgs/person_msgs/msg/Skeleton3D.msg;/home/neem/work/kr_ws/src/iai_common_msgs/person_msgs/msg/Person.msg;/home/neem/work/kr_ws/src/iai_common_msgs/person_msgs/msg/PointEvents.msg;/home/neem/work/kr_ws/src/iai_common_msgs/person_msgs/msg/SkeletonBBox.msg")
+set(person_msgs_SERVICE_FILES "")

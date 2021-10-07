@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/rosprolog.owl#JSONWrapperResponse">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rosprolog/JSONWrapperResponse</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c9746521c9702f088402691456216bc9</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/rosprolog.owl#JSONWrapperResponse_json_data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Binding_json_data">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Output_json_data"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Input_json_data"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapperResponse"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapperRequest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Task">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Input_json_data"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Input_mode"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Output_json_data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/rosprolog.owl#JSONWrapperRequest_mode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mode</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/rosprolog.owl#JSONWrapper">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rosprolog/JSONWrapper</ros:hasTypePath>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">711a21c0da0464ac74bbc6e6331ef069</ros:hasMD5>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapperReqest"/>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapperResponse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Binding_mode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapperRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Input_mode"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Execution">
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Binding_json_data"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Binding_mode"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Task"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/rosprolog.owl#JSONWrapper"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/rosprolog.owl#JSONWrapperReqest">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/rosprolog.owl#JSONWrapperRequest_mode"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">600c5764c78cd158a89a10ca5449bf63</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/rosprolog.owl#JSONWrapperRequest_json_data"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rosprolog/JSONWrapperRequest</ros:hasTypePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/rosprolog.owl#JSONWrapperRequest_json_data">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">json_data</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/rosprolog.owl#JSONWrapperResponse_json_data">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">json_data</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Input_mode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Input_json_data">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/rosprolog.owl#JSONWrapper_Output_json_data">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

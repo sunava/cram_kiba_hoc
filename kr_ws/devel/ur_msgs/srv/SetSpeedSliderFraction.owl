@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#SetSpeedSliderFractionResponse_success">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">success</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">172aeb6c49379a44cf68480fa5bfad3c</ros:hasMD5>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFractionResponse"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur_msgs/SetSpeedSliderFraction</ros:hasTypePath>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFractionReqest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Task">
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Input_speed_slider_fraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Output_success"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFractionReqest">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">64134244ab4dfc72a3406fe06d580274</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur_msgs/SetSpeedSliderFractionRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#SetSpeedSliderFractionRequest_speed_slider_fraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Binding_success">
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Output_success"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFractionResponse"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Input_speed_slider_fraction">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Execution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Task"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Binding_speed_slider_fraction"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Binding_success"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFractionResponse">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">358e233cde0c8a8bcfea4ce193f8fc15</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur_msgs/SetSpeedSliderFractionResponse</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#SetSpeedSliderFractionResponse_success"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Binding_speed_slider_fraction">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFractionRequest"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Input_speed_slider_fraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/ur_msgs.owl#SetSpeedSliderFraction_Output_success">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#SetSpeedSliderFractionRequest_speed_slider_fraction">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float64"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speed_slider_fraction</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

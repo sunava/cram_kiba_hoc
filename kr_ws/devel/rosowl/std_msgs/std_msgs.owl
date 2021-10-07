@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/std_msgs.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Duration.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/String.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Float64.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Header.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/src/rosowl/owl/ROS.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Int64.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Int16MultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/MultiArrayDimension.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/UInt64MultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Int32.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/UInt16.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Int16.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Int8.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Char.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Bool.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/UInt32.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Time.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/UInt16MultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Float64MultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/ColorRGBA.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Int32MultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/UInt8.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Empty.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Int8MultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/UInt8MultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/MultiArrayLayout.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/ByteMultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Int64MultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/UInt64.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Byte.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Float32MultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/UInt32MultiArray.owl"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/rosowl/std_msgs/msg/Float32.owl"/>
+  </rdf:Description>
+</rdf:RDF>

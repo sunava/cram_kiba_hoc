@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#Skeleton3D_numberOfJoints">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">numberOfJoints</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#Skeleton3D_joints3D">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joints3D</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#Skeleton3D">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person_msgs/Skeleton3D</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#Skeleton3D_header"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#Skeleton3D_joints3D"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fde309dad1d25aa95db98383a3e75e70</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/person_msgs.owl#Skeleton3D_numberOfJoints"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/person_msgs.owl#Skeleton3D_header">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Header"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header</ros:hasSlotName>
+  </rdf:Description>
+</rdf:RDF>

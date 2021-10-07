@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_title">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">title</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_height">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">height</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_xlabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xlabel</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_ylabel">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ylabel</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_width">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">width</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_type">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#DataVis">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_title"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">54fc13c6e72b87a9c5ab7e772c90e8f2</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_ylabel"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data_vis_msgs/DataVis</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_id"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_xlabel"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_height"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_type"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_values"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_width"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_fontsize"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_fontsize">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fontsize</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_values">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">values</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#ValueList"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#DataVis_id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</ros:hasSlotName>
+  </rdf:Description>
+</rdf:RDF>

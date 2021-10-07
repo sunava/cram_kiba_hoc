@@ -1,0 +1,19 @@
+(cl:defpackage iai_kinematics_msgs-msg
+  (:use )
+  (:export
+   "<ERRORCODES>"
+   "ERRORCODES"
+   "<JOINTLIMITS>"
+   "JOINTLIMITS"
+   "<KDLWEIGHTS>"
+   "KDLWEIGHTS"
+   "<KINEMATICSOLVERINFO>"
+   "KINEMATICSOLVERINFO"
+   "<MULTIDOFJOINTSTATE>"
+   "MULTIDOFJOINTSTATE"
+   "<POSITIONIKREQUEST>"
+   "POSITIONIKREQUEST"
+   "<ROBOTSTATE>"
+   "ROBOTSTATE"
+  ))
+

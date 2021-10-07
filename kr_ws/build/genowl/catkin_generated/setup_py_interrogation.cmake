@@ -1,0 +1,7 @@
+set(genowl_SETUP_PY_SETUP_MODULE "distutils.core")
+set(genowl_SETUP_PY_VERSION "0.0.1")
+set(genowl_SETUP_PY_SCRIPTS "")
+set(genowl_SETUP_PY_PACKAGES "genowl")
+set(genowl_SETUP_PY_PACKAGE_DIRS "src/genowl")
+set(genowl_SETUP_PY_MODULES "")
+set(genowl_SETUP_PY_MODULE_DIRS "")

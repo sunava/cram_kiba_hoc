@@ -1,0 +1,8 @@
+prefix=/home/neem/work/kr_ws/devel
+
+Name: ease_ontology
+Description: Description of ease_ontology
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: dul

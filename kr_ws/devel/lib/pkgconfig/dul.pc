@@ -1,0 +1,8 @@
+prefix=/home/neem/work/kr_ws/devel
+
+Name: dul
+Description: Description of dul
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

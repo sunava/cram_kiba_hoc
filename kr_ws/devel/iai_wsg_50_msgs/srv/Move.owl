@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#MoveResponse">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_wsg_50_msgs.owl#MoveResponse_error"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bf8e3bc5443691736455ca47e3128027</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_wsg_50_msgs/MoveResponse</ros:hasTypePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move">
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#MoveResponse"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ac4bc9278b95c49c6bb95b3db7e0a0e4</ros:hasMD5>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_wsg_50_msgs/Move</ros:hasTypePath>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#MoveReqest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Task">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Input_width"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Input_speed"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Output_error"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#MoveReqest">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_wsg_50_msgs/MoveRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_wsg_50_msgs.owl#MoveRequest_speed"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_wsg_50_msgs.owl#MoveRequest_width"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b2d4f46fe020a06d64128c90310c767d</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Execution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Binding_error"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Task"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Binding_speed"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Binding_width"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Binding_error">
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Output_error"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#MoveResponse"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_wsg_50_msgs.owl#MoveResponse_error">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#uint8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">error</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_wsg_50_msgs.owl#MoveRequest_width">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">width</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Input_width">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_wsg_50_msgs.owl#MoveRequest_speed">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speed</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#float32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Binding_width">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Input_width"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#MoveRequest"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Input_speed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Output_error">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Binding_speed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#MoveRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_wsg_50_msgs.owl#Move_Input_speed"/>
+  </rdf:Description>
+</rdf:RDF>

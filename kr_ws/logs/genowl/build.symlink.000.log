@@ -1,0 +1,6 @@
+Symlinking /home/neem/work/kr_ws/devel/etc/ros/genmsg/genowl
+Symlinking /home/neem/work/kr_ws/devel/share/genowl/cmake/genowl-extras.cmake
+Symlinking /home/neem/work/kr_ws/devel/share/genowl/cmake/genowlConfig.cmake
+Symlinking /home/neem/work/kr_ws/devel/share/genowl/cmake/genowlConfig-version.cmake
+Symlinking /home/neem/work/kr_ws/devel/lib/pkgconfig/genowl.pc
+Symlinking /home/neem/work/kr_ws/devel/lib/python2.7/dist-packages/genowl/__init__.py

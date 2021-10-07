@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinishReqest">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">json_prolog_msgs/PrologFinishRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/json_prolog_msgs.owl#PrologFinishRequest_id"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bbfcda76036ebbe3d36caf7af80b260c</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinish_Task">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinish_Input_id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/json_prolog_msgs.owl#PrologFinishRequest_id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinish_Execution">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinish"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinish_Task"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinish_Binding_id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinish">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bbfcda76036ebbe3d36caf7af80b260c</ros:hasMD5>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinishReqest"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">json_prolog_msgs/PrologFinish</ros:hasTypePath>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinishResponse"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinish_Binding_id">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinishRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinish_Input_id"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinishResponse">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">json_prolog_msgs/PrologFinishResponse</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d41d8cd98f00b204e9800998ecf8427e</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/json_prolog_msgs.owl#PrologFinish_Input_id">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

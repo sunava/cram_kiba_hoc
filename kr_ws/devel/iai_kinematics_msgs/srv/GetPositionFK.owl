@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Execution">
+    <dul:defines rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Task"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Binding_error_code"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Binding_pose_stamped"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Binding_fk_link_names"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Binding_header"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Binding_robot_state"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Binding_fk_link_names">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFKRequest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFKResponse"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Output_fk_link_names"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Input_fk_link_names"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKRequest_header">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Header"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Binding_header">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Input_header"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFKRequest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKRequest_robot_state">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">robot_state</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#RobotState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKResponse_pose_stamped">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#PoseStamped"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pose_stamped</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFKReqest">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKRequest_header"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKRequest_fk_link_names"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/GetPositionFKRequest</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ddaa8b9932e60599795bcb983e28cf57</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKRequest_robot_state"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Task">
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Input_header"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Output_error_code"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Output_fk_link_names"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Input_robot_state"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Input_fk_link_names"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Output_pose_stamped"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKResponse_fk_link_names">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fk_link_names</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKResponse_error_code">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">error_code</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#ErrorCodes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Binding_pose_stamped">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFKResponse"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Output_pose_stamped"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFKReqest"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFKResponse"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/GetPositionFK</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2088007c8963e2252a67c872affa0985</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFKResponse">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKResponse_error_code"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/GetPositionFKResponse</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4a3efc190f6ac6f248069cfa3cd94286</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKResponse_pose_stamped"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKResponse_fk_link_names"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Output_error_code">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Input_robot_state">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Input_header">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Binding_error_code">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Output_error_code"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFKResponse"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Binding_robot_state">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Input_robot_state"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFKRequest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Input_fk_link_names">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetPositionFKRequest_fk_link_names">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fk_link_names</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Output_fk_link_names">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetPositionFK_Output_pose_stamped">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#IOStates_digital_in_states">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#Digital"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digital_in_states</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#IOStates_digital_out_states">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digital_out_states</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#Digital"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#IOStates">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#IOStates_flag_states"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur_msgs/IOStates</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#IOStates_analog_out_states"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#IOStates_digital_out_states"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3033784e7041da89491b97cc4c1105b5</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#IOStates_digital_in_states"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#IOStates_analog_in_states"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#IOStates_flag_states">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#Digital"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flag_states</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#IOStates_analog_in_states">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analog_in_states</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#Analog"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/ur_msgs.owl#IOStates_analog_out_states">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analog_out_states</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/ur_msgs.owl#Analog"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+  </rdf:Description>
+</rdf:RDF>

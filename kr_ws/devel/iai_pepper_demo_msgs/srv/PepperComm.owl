@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperCommReqest">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommRequest_get_heard"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommRequest_get_pose"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommRequest_speak"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_pepper_demo_msgs/PepperCommRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommRequest_point_at"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6980118cc4956252ec67f5db0718491d</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommResponse_pepper_pose">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pepper_pose</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#TransformStamped"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_get_heard">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperCommRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_get_heard"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Output_pepper_pose">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_point_at">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_point_at"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperCommRequest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_speak">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Task">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_speak"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_get_heard"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Output_pepper_pose"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_get_pose"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Output_heard"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_point_at"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_get_pose">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_speak">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperCommRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_speak"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommRequest_get_pose">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">get_pose</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Execution">
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_get_pose"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Task"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_pepper_pose"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_heard"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_get_heard"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_speak"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_point_at"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_pepper_pose">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperCommResponse"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Output_pepper_pose"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommResponse_heard">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heard</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_heard">
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Output_heard"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperCommResponse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommRequest_speak">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speak</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Binding_get_pose">
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_get_pose"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperCommRequest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommRequest_point_at">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point_at</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#PointStamped"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommRequest_get_heard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">get_heard</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#bool"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperCommResponse">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f18dc2a384d597c14bdcfa251a016b90</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_pepper_demo_msgs/PepperCommResponse</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommResponse_heard"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_pepper_demo_msgs.owl#PepperCommResponse_pepper_pose"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Output_heard">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">62367ba17406150d44dbf73edf243c81</ros:hasMD5>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperCommReqest"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_pepper_demo_msgs/PepperComm</ros:hasTypePath>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperCommResponse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_point_at">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_pepper_demo_msgs.owl#PepperComm_Input_get_heard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

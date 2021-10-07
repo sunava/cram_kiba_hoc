@@ -1,0 +1,74 @@
+[35m[1mScanning dependencies of target _iai_wsg_50_msgs_generate_messages_check_deps_Move[0m
+[  0%] Built target _iai_wsg_50_msgs_generate_messages_check_deps_Move
+[35m[1mScanning dependencies of target _iai_wsg_50_msgs_generate_messages_check_deps_SpeedCmd[0m
+[  0%] Built target _iai_wsg_50_msgs_generate_messages_check_deps_SpeedCmd
+[35m[1mScanning dependencies of target _iai_wsg_50_msgs_generate_messages_check_deps_Cmd[0m
+[  0%] Built target _iai_wsg_50_msgs_generate_messages_check_deps_Cmd
+[35m[1mScanning dependencies of target _iai_wsg_50_msgs_generate_messages_check_deps_Status[0m
+[  0%] Built target _iai_wsg_50_msgs_generate_messages_check_deps_Status
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target _iai_wsg_50_msgs_generate_messages_check_deps_PositionCmd[0m
+[  0%] Built target _iai_wsg_50_msgs_generate_messages_check_deps_PositionCmd
+[35m[1mScanning dependencies of target _iai_wsg_50_msgs_generate_messages_check_deps_Incr[0m
+[  0%] Built target _iai_wsg_50_msgs_generate_messages_check_deps_Incr
+[35m[1mScanning dependencies of target _iai_wsg_50_msgs_generate_messages_check_deps_Conf[0m
+[  0%] Built target _iai_wsg_50_msgs_generate_messages_check_deps_Conf
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target iai_wsg_50_msgs_generate_messages_cpp[0m
+[  2%] [34m[1mGenerating C++ code from iai_wsg_50_msgs/PositionCmd.msg[0m
+[  5%] [34m[1mGenerating C++ code from iai_wsg_50_msgs/Status.msg[0m
+[  7%] [34m[1mGenerating C++ code from iai_wsg_50_msgs/Cmd.msg[0m
+[ 10%] [34m[1mGenerating C++ code from iai_wsg_50_msgs/SpeedCmd.msg[0m
+[ 13%] [34m[1mGenerating C++ code from iai_wsg_50_msgs/Conf.srv[0m
+[ 15%] [34m[1mGenerating C++ code from iai_wsg_50_msgs/Move.srv[0m
+[ 18%] [34m[1mGenerating C++ code from iai_wsg_50_msgs/Incr.srv[0m
+[ 18%] Built target iai_wsg_50_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target iai_wsg_50_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target iai_wsg_50_msgs_generate_messages_lisp[0m
+[ 21%] [34m[1mGenerating Python from MSG iai_wsg_50_msgs/PositionCmd[0m
+[ 23%] [34m[1mGenerating Lisp code from iai_wsg_50_msgs/PositionCmd.msg[0m
+[ 26%] [34m[1mGenerating Lisp code from iai_wsg_50_msgs/Status.msg[0m
+[ 28%] [34m[1mGenerating Lisp code from iai_wsg_50_msgs/Cmd.msg[0m
+[ 31%] [34m[1mGenerating Lisp code from iai_wsg_50_msgs/SpeedCmd.msg[0m
+[ 34%] [34m[1mGenerating Python from MSG iai_wsg_50_msgs/Status[0m
+[ 36%] [34m[1mGenerating Lisp code from iai_wsg_50_msgs/Conf.srv[0m
+[ 39%] [34m[1mGenerating Lisp code from iai_wsg_50_msgs/Move.srv[0m
+[ 42%] [34m[1mGenerating Lisp code from iai_wsg_50_msgs/Incr.srv[0m
+[ 42%] Built target iai_wsg_50_msgs_generate_messages_lisp
+[ 44%] [34m[1mGenerating Python from MSG iai_wsg_50_msgs/Cmd[0m
+[ 47%] [34m[1mGenerating Python from MSG iai_wsg_50_msgs/SpeedCmd[0m
+[ 50%] [34m[1mGenerating Python code from SRV iai_wsg_50_msgs/Conf[0m
+[ 52%] [34m[1mGenerating Python code from SRV iai_wsg_50_msgs/Move[0m
+[ 55%] [34m[1mGenerating Python code from SRV iai_wsg_50_msgs/Incr[0m
+[ 57%] [34m[1mGenerating Python msg __init__.py for iai_wsg_50_msgs[0m
+[ 60%] [34m[1mGenerating Python srv __init__.py for iai_wsg_50_msgs[0m
+[35m[1mScanning dependencies of target iai_wsg_50_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target iai_wsg_50_msgs_generate_messages_eus[0m
+[ 63%] [34m[1mGenerating Javascript code from iai_wsg_50_msgs/PositionCmd.msg[0m
+[ 65%] [34m[1mGenerating EusLisp code from iai_wsg_50_msgs/PositionCmd.msg[0m
+[ 65%] Built target iai_wsg_50_msgs_generate_messages_py
+[ 68%] [34m[1mGenerating EusLisp code from iai_wsg_50_msgs/Status.msg[0m
+[ 71%] [34m[1mGenerating Javascript code from iai_wsg_50_msgs/Status.msg[0m
+[ 73%] [34m[1mGenerating Javascript code from iai_wsg_50_msgs/Cmd.msg[0m
+[ 76%] [34m[1mGenerating EusLisp code from iai_wsg_50_msgs/Cmd.msg[0m
+[ 78%] [34m[1mGenerating Javascript code from iai_wsg_50_msgs/SpeedCmd.msg[0m
+[ 81%] [34m[1mGenerating Javascript code from iai_wsg_50_msgs/Conf.srv[0m
+[ 84%] [34m[1mGenerating Javascript code from iai_wsg_50_msgs/Move.srv[0m
+[ 86%] [34m[1mGenerating Javascript code from iai_wsg_50_msgs/Incr.srv[0m
+[ 89%] [34m[1mGenerating EusLisp code from iai_wsg_50_msgs/SpeedCmd.msg[0m
+[ 92%] [34m[1mGenerating EusLisp code from iai_wsg_50_msgs/Conf.srv[0m
+[ 92%] Built target iai_wsg_50_msgs_generate_messages_nodejs
+[ 94%] [34m[1mGenerating EusLisp code from iai_wsg_50_msgs/Move.srv[0m
+[ 97%] [34m[1mGenerating EusLisp code from iai_wsg_50_msgs/Incr.srv[0m
+[100%] [34m[1mGenerating EusLisp manifest code for iai_wsg_50_msgs[0m
+[100%] Built target iai_wsg_50_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target iai_wsg_50_msgs_generate_messages[0m
+[100%] Built target iai_wsg_50_msgs_generate_messages

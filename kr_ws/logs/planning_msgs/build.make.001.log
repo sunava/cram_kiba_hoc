@@ -1,0 +1,10 @@
+[  0%] Built target _planning_msgs_generate_messages_check_deps_Binding
+[  0%] Built target _planning_msgs_generate_messages_check_deps_Planning
+[  0%] Built target _planning_msgs_generate_messages_check_deps_Plan
+[  0%] Built target _planning_msgs_generate_messages_check_deps_Step
+[ 21%] Built target planning_msgs_generate_messages_eus
+[ 47%] Built target planning_msgs_generate_messages_py
+[ 65%] Built target planning_msgs_generate_messages_nodejs
+[ 82%] Built target planning_msgs_generate_messages_lisp
+[100%] Built target planning_msgs_generate_messages_cpp
+[100%] Built target planning_msgs_generate_messages

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/iai_pepper_demo_msgs.owl">
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/src/rosowl/owl/ROS.owl"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="file:/home/neem/work/kr_ws/devel/iai_pepper_demo_msgs/srv/PepperComm.owl"/>
+  </rdf:Description>
+</rdf:RDF>

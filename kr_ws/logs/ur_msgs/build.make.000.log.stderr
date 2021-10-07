@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/neem/work/kr_ws/src/genowl/scripts/genpkg_owl.py", line 12, in <module>
+    import genowl.generator
+  File "/home/neem/work/kr_ws/src/genowl/src/genowl/generator.py", line 17, in <module>
+    from rdflib import Namespace, Literal, Graph
+ImportError: No module named rdflib
+make[2]: *** [ur_msgs.owl] Error 1
+make[1]: *** [CMakeFiles/ur_msgs.owl.dir/all] Error 2
+make: *** [all] Error 2

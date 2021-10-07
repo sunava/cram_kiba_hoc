@@ -1,0 +1,7 @@
+set(knowrob_SETUP_PY_SETUP_MODULE "distutils.core")
+set(knowrob_SETUP_PY_VERSION "2.0.0")
+set(knowrob_SETUP_PY_SCRIPTS "")
+set(knowrob_SETUP_PY_PACKAGES "knowrob")
+set(knowrob_SETUP_PY_PACKAGE_DIRS "src/knowrob")
+set(knowrob_SETUP_PY_MODULES "")
+set(knowrob_SETUP_PY_MODULE_DIRS "")

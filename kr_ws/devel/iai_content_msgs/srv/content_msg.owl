@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cd8f4c57d396801edf6a2140ccb6506e</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_content_msgs/content_msg</ros:hasTypePath>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msgReqest"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msgResponse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_content_msgs.owl#content_msgRequest_depth_grasped">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/sensor_msgs.owl#Image"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depth_grasped</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msgReqest">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d454ceb7dbd72bbd7263e50d386a9436</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_content_msgs/content_msgRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_content_msgs.owl#content_msgRequest_depth"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_content_msgs.owl#content_msgRequest_depth_grasped"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Execution">
+    <dul:describes rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Binding_content"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Task"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Binding_depth_grasped"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Binding_depth"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_content_msgs.owl#content_msgRequest_depth">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/sensor_msgs.owl#Image"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depth</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Binding_content">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msgResponse"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Output_content"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msgResponse">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c2e84951ee6d0addf437bfddd5b19734</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_content_msgs/content_msgResponse</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_content_msgs.owl#content_msgResponse_content"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Binding_depth_grasped">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msgRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Input_depth_grasped"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Binding_depth">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msgRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Input_depth"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_content_msgs.owl#content_msgResponse_content">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">content</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Output_content">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Task">
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Input_depth_grasped"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Input_depth"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Output_content"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Input_depth_grasped">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_content_msgs.owl#content_msg_Input_depth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

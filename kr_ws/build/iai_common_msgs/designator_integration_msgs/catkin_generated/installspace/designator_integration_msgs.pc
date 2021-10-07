@@ -1,0 +1,8 @@
+prefix=/home/neem/work/kr_ws/install
+
+Name: designator_integration_msgs
+Description: Description of designator_integration_msgs
+Version: 0.0.6
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs message_runtime

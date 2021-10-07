@@ -1,0 +1,4 @@
+/bin/sh: 1: scons: not found
+make[2]: *** [mongocxx/src/mongocxx-stamp/mongocxx-build] Error 127
+make[1]: *** [CMakeFiles/mongocxx.dir/all] Error 2
+make: *** [all] Error 2

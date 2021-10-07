@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#QuaternionStamped_header">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/std_msgs.owl#Header"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#QuaternionStamped_quaternion">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Quaternion"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quaternion</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/geometry_msgs.owl#QuaternionStamped">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e57f1e547e0e1fd13504588ffc8334e2</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometry_msgs/QuaternionStamped</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#QuaternionStamped_header"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#QuaternionStamped_quaternion"/>
+  </rdf:Description>
+</rdf:RDF>

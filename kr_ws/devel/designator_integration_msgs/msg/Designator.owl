@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/designator_integration_msgs.owl#Designator_description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/designator_integration_msgs.owl#KeyValuePair"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/designator_integration_msgs.owl#Designator_type">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#int32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/designator_integration_msgs.owl#Designator">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a7d8250674b8d40ad082b079d968c7bf</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/designator_integration_msgs.owl#Designator_description"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">designator_integration_msgs/Designator</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/designator_integration_msgs.owl#Designator_type"/>
+  </rdf:Description>
+</rdf:RDF>

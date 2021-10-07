@@ -1,0 +1,8 @@
+prefix=/home/neem/work/kr_ws/install
+
+Name: iai_control_msgs
+Description: Description of iai_control_msgs
+Version: 0.0.6
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs geometry_msgs actionlib_msgs

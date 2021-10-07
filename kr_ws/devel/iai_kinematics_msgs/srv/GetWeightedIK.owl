@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKRequest_pose">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pose</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#PoseStamped"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKResponse_error_code">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">error_code</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#ErrorCodes"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKRequest_ik_seed">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ik_seed</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/sensor_msgs.owl#JointState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_ik_seed">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIKRequest"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_ik_seed"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIKReqest">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/GetWeightedIKRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKRequest_ik_seed"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKRequest_weights"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKRequest_tool_frame"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">53b781873d4bc97a81274c9247a551d9</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKRequest_pose"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ae963d0cab638b025249ba90e48a170c</ros:hasMD5>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIKResponse"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/GetWeightedIK</ros:hasTypePath>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIKReqest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Task">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_ik_seed"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_pose"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Output_solution"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_tool_frame"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Output_error_code"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_weights"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_error_code">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIKResponse"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Output_error_code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKRequest_tool_frame">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tool_frame</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/geometry_msgs.owl#Pose"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKRequest_weights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weights</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#KDLWeights"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Execution">
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_tool_frame"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_pose"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_ik_seed"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Task"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_solution"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_weights"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_error_code"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKResponse_solution">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/sensor_msgs.owl#JointState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Output_error_code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_solution">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIKResponse"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Output_solution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIKResponse">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26703d3aa2f94a5367558f4749423a09</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKResponse_error_code"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/GetWeightedIKResponse</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetWeightedIKResponse_solution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_tool_frame">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_tool_frame"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIKRequest"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_weights">
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIKRequest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_weights"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_ik_seed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_tool_frame">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_weights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_pose">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Binding_pose">
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Input_pose"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIKRequest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetWeightedIK_Output_solution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

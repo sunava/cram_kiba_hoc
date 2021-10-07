@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#ValueList">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data_vis_msgs/ValueList</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#ValueList_value1"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">93606cae4b5c86869b7aa221cf2b0b01</ros:hasMD5>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#ValueList_value2"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/data_vis_msgs.owl#ValueList_label"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#ValueList_value2">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value2</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#ValueList_value1">
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ArraySlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value1</ros:hasSlotName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/data_vis_msgs.owl#ValueList_label">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#PrimitiveSlot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/ont/ROS.owl#string"/>
+  </rdf:Description>
+</rdf:RDF>

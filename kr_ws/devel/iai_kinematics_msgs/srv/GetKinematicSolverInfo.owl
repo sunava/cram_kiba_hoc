@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfo_Output_kinematic_solver_info">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfo_Execution">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfo_Task"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfo_Binding_kinematic_solver_info"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfo_Task">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfo_Output_kinematic_solver_info"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfo">
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfoResponse"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/GetKinematicSolverInfo</ros:hasTypePath>
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfoReqest"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9b591d98efeb66095c1b33a70221cab5</ros:hasMD5>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfoResponse">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9b591d98efeb66095c1b33a70221cab5</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/GetKinematicSolverInfoResponse</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetKinematicSolverInfoResponse_kinematic_solver_info"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/iai_kinematics_msgs.owl#GetKinematicSolverInfoResponse_kinematic_solver_info">
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kinematic_solver_info</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/iai_kinematics_msgs.owl#KinematicSolverInfo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfo_Binding_kinematic_solver_info">
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfo_Output_kinematic_solver_info"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfoResponse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/iai_kinematics_msgs.owl#GetKinematicSolverInfoReqest">
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d41d8cd98f00b204e9800998ecf8427e</ros:hasMD5>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_kinematics_msgs/GetKinematicSolverInfoRequest</ros:hasTypePath>
+  </rdf:Description>
+</rdf:RDF>

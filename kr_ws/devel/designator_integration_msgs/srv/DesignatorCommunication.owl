@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ros="http://www.ros.org/ont/ROS.owl#"
+   xmlns:wf="http://www.ease-crc.org/ont/EASE-WF.owl#"
+>
+  <rdf:Description rdf:about="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Execution">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ROSQueryingExecution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Binding_request"/>
+    <dul:defines rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Task"/>
+    <dul:describes rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication"/>
+    <wf:hasBinding rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Binding_response"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Task">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Output_response"/>
+    <dul:hasParameter rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Input_request"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunicationResponse">
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/designator_integration_msgs.owl#DesignatorCommunicationResponse_response"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">designator_integration_msgs/DesignatorCommunicationResponse</ros:hasTypePath>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">69c4a44d2478586df9e43704f570d430</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication">
+    <ros:hasRequestType rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunicationReqest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8f8b294dbadbca716e0316b887c4f788</ros:hasMD5>
+    <ros:hasResponseType rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunicationResponse"/>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#ServiceInterface"/>
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">designator_integration_msgs/DesignatorCommunication</ros:hasTypePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/designator_integration_msgs.owl#DesignatorCommunicationResponse_response">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">response</ros:hasSlotName>
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/designator_integration_msgs.owl#DesignatorResponse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Binding_request">
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Input_request"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunicationRequest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Output_response">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunicationReqest">
+    <ros:hasTypePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">designator_integration_msgs/DesignatorCommunicationRequest</ros:hasTypePath>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/designator_integration_msgs.owl#DesignatorCommunicationRequest_request"/>
+    <ros:hasMD5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4481249db37f11e5ce84692ede879600</ros:hasMD5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Input_request">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/msg/designator_integration_msgs.owl#DesignatorCommunicationRequest_request">
+    <rdf:type rdf:resource="http://www.ros.org/ont/ROS.owl#MessageSlot"/>
+    <ros:hasSlotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">request</ros:hasSlotName>
+    <dul:hasPart rdf:resource="http://www.ros.org/msg/designator_integration_msgs.owl#DesignatorRequest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Binding_response">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <wf:hasBindingFiller rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunicationResponse"/>
+    <wf:hasBindingRole rdf:resource="http://www.ros.org/srv/designator_integration_msgs.owl#DesignatorCommunication_Output_response"/>
+    <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE-WF.owl#RoleFillerBinding"/>
+  </rdf:Description>
+</rdf:RDF>

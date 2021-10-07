@@ -1,0 +1,8 @@
+prefix=/home/neem/work/kr_ws/install
+
+Name: knowrob
+Description: Description of knowrob
+Version: 2.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: rosprolog roscpp roslib

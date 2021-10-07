@@ -1,0 +1,17 @@
+[35m[1mScanning dependencies of target mongocxx[0m
+[ 11%] [34m[1mCreating directories for 'mongocxx'[0m
+[ 22%] [34m[1mPerforming download step (git clone) for 'mongocxx'[0m
+Cloning into 'mongocxx'...
+Switched to a new branch 'releases/legacy'
+Branch 'releases/legacy' set up to track remote branch 'releases/legacy' from 'origin'.
+[ 44%] [34m[1mNo patch step for 'mongocxx'[0m
+[ 44%] [34m[1mNo update step for 'mongocxx'[0m
+[ 55%] [34m[1mNo configure step for 'mongocxx'[0m
+[ 66%] [34m[1mPerforming build step for 'mongocxx'[0m
+/bin/sh: 1: scons: not found
+CMakeFiles/mongocxx.dir/build.make:111: recipe for target 'mongocxx/src/mongocxx-stamp/mongocxx-build' failed
+make[2]: *** [mongocxx/src/mongocxx-stamp/mongocxx-build] Error 127
+CMakeFiles/Makefile2:104: recipe for target 'CMakeFiles/mongocxx.dir/all' failed
+make[1]: *** [CMakeFiles/mongocxx.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2
